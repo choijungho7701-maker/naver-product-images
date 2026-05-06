@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1a2744",
+                        "on-background": "#1b1c1c",
+                        "secondary": "#F97316",
+                        "blue-theme": "#2563A8",
+                        "amber-theme": "#F59E0B",
+                        "green-theme": "#10B981"
+                    },
+                    fontFamily: {
+                        sans: ['Public Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+        }
+        .infographic-shadow {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+        .science-badge {
+            font-size: 13px;
+            font-family: 'Courier New', monospace;
+            background-color: #E0F2FE;
+            color: #0369A1;
+            border: 1px solid #0369A1;
+            padding: 4px 10px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+        @media (max-width: 600px) { .grid { grid-template-columns: 1fr !important; } }
+    </style>
+</head>
+<body class="bg-[#FFFFFF] font-sans text-on-background min-h-screen flex items-center justify-center p-6 md:p-12">
+<main class="w-full max-w-[1100px] mx-auto">
+<!-- Urgency Banner -->
+<div style="background:#DC2626;color:#ffffff;font-size:20px;font-weight:700;text-align:center;padding:14px 24px;border-radius:12px;margin-bottom:32px;">🔥 5월 한정 세트 구성 — 재고 소진 시 종료</div>
+<!-- Centered Header Section -->
+<div class="text-center mb-16">
+<h1 class="text-[40px] font-bold text-primary mb-4">홍삼 + 유산균이 함께하면</h1>
+<div class="w-[60px] h-1 bg-[#F97316] mx-auto rounded-full"></div>
+</div>
+<!-- 2x2 Bento Grid -->
+<div class="relative">
+<!-- Subtle Horizontal Divider between rows -->
+<div class="absolute top-1/2 left-0 w-full h-px bg-gray-100 -translate-y-1/2 hidden md:block"></div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 relative">
+<!-- Card 1: Immunity -->
+<div class="bg-white rounded-[16px] infographic-shadow p-10 flex flex-col items-start relative">
+<span style="position:absolute;top:16px;right:16px;background:#F97316;color:#ffffff;font-size:12px;font-weight:700;padding:4px 10px;border-radius:20px;">★ 5.0 (50건)</span>
+<div class="w-[100px] h-[100px] rounded-full bg-[#F97316]/10 flex items-center justify-center mb-8">
+<svg class="text-[#F97316]" fill="none" height="60" viewbox="0 0 24 24" width="60" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2L4 5V11C4 16.19 7.41 21.05 12 22.5C16.59 21.05 20 16.19 20 11V5L12 2Z" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+<circle cx="12" cy="12" fill="currentColor" fill-opacity="0.6" r="3"></circle>
+<path d="M10 12H14M12 10V14" stroke="white" stroke-linecap="round" stroke-width="1"></path>
+<circle cx="17" cy="8" fill="currentColor" r="1"></circle>
+<circle cx="7" cy="14" fill="currentColor" r="1"></circle>
+</svg>
+</div>
+<div class="mb-4">
+<span class="science-badge">Ginsenoside Rg1·Rb1·Rg3</span>
+</div>
+<h3 class="text-[28px] font-bold text-primary mb-4">면역 건강에 도움</h3>
+<p class="text-[22px] text-[#444] leading-[2.0] mb-8">
+                        홍삼 진세노사이드가 NK세포 활성화를 돕습니다.
+                    </p>
+<span class="px-4 py-1.5 bg-[#F97316]/10 text-[#F97316] text-sm font-bold rounded-full">홍삼 핵심 성분</span>
+</div>
+<!-- Card 2: Gut Health -->
+<div class="bg-white rounded-[16px] infographic-shadow p-10 flex flex-col items-start relative">
+<span style="position:absolute;top:16px;right:16px;background:#2563A8;color:#ffffff;font-size:12px;font-weight:700;padding:4px 10px;border-radius:20px;">★ 4.9 (386건)</span>
+<div class="w-[100px] h-[100px] rounded-full bg-[#2563A8]/10 flex items-center justify-center mb-8">
+<svg class="text-[#2563A8]" fill="none" height="60" viewbox="0 0 24 24" width="60" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.5 13.5C17.5 16 15.5 18 12 18C8.5 18 6.5 16 6.5 13.5C6.5 11 8.5 9 12 9C15.5 9 17.5 7 17.5 4.5" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+<path d="M6.5 4.5C6.5 7 8.5 9 12 9" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+<circle cx="15" cy="12" fill="currentColor" r="1.5"></circle>
+<circle cx="9" cy="15" fill="currentColor" r="1.5"></circle>
+<circle cx="12" cy="6" fill="currentColor" r="1"></circle>
+</svg>
+</div>
+<div class="mb-4">
+<span class="science-badge">Lactobacillus · Bifidobacterium</span>
+</div>
+<h3 class="text-[28px] font-bold text-primary mb-4">장 건강에 도움</h3>
+<p class="text-[22px] text-[#444] leading-[2.0] mb-4">
+                        유산균이 유익균 증식을 도와 장 환경 개선을 돕습니다.
+                    </p>
+<p style="font-size:14px;color:#888;margin-bottom:20px;">6,574명이 찜 · 최근 42,564건 주문</p>
+<span class="px-4 py-1.5 bg-[#2563A8]/10 text-[#2563A8] text-sm font-bold rounded-full">유산균 핵심 성분</span>
+</div>
+<!-- Card 3: Vitality -->
+<div class="bg-white rounded-[16px] infographic-shadow p-10 flex flex-col items-start">
+<div class="w-[100px] h-[100px] rounded-full bg-[#F59E0B]/10 flex items-center justify-center mb-8">
+<svg class="text-[#F59E0B]" fill="none" height="60" viewbox="0 0 24 24" width="60" xmlns="http://www.w3.org/2000/svg">
+<path d="M13 3L6 14H12L11 21L18 10H12L13 3Z" fill="currentColor"></path>
+<path d="M18 5L20 4M20 19L18 18M4 5L6 6M4 19L6 18" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path>
+</svg>
+</div>
+<div class="mb-4">
+<span class="science-badge">Ginsenoside · Saponin</span>
+</div>
+<h3 class="text-[28px] font-bold text-primary mb-4">활력 유지에 도움</h3>
+<p class="text-[22px] text-[#444] leading-[2.0] mb-8">
+                        홍삼 사포닌이 일상의 활력 유지에 도움을 줍니다.
+                    </p>
+<span class="px-4 py-1.5 bg-[#F59E0B]/10 text-[#F59E0B] text-sm font-bold rounded-full">피로 개선</span>
+</div>
+<!-- Card 4: Synergy -->
+<div class="bg-white rounded-[16px] infographic-shadow p-10 flex flex-col items-start">
+<div class="w-[100px] h-[100px] rounded-full bg-[#10B981]/10 flex items-center justify-center mb-8">
+<svg class="text-[#10B981]" fill="none" height="60" viewbox="0 0 24 24" width="60" xmlns="http://www.w3.org/2000/svg">
+<circle cx="9" cy="12" r="5" stroke="currentColor" stroke-width="2"></circle>
+<circle cx="15" cy="12" r="5" stroke="currentColor" stroke-width="2"></circle>
+<path d="M12 9C12.8 10 12.8 14 12 15" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</div>
+<div class="mb-4">
+<span class="science-badge">Immune × Gut Synergy</span>
+</div>
+<h3 class="text-[28px] font-bold text-primary mb-4">이중 시너지 효과</h3>
+<p class="text-[22px] text-[#444] leading-[2.0] mb-8">
+                        두 성분의 조합으로 면역과 장 건강을 동시에 돕습니다.
+                    </p>
+<span class="px-4 py-1.5 bg-[#10B981]/10 text-[#10B981] text-sm font-bold rounded-full">복합 케어</span>
+</div>
+</div>
+</div>
+<!-- CTA Box -->
+<div class="mt-16 bg-[#F8F5EF] border-2 border-[#1a2744] rounded-[16px] p-[20px] text-center">
+<p class="text-[24px] font-bold text-[#1a2744]">두 성분의 조합이 건강을 더욱 효과적으로 지킵니다</p>
+</div>
+</main>
+</body></html>
