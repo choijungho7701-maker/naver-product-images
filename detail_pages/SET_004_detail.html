@@ -2,337 +2,271 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>마그네슘효능 건강 세트</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>멀티미네랄+B-콤플렉스 건강 세트</title>
 <style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body {
-  font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', sans-serif;
-  background: #f0f0f0;
-  color: #111;
-}
-.wrap { max-width: 860px; margin: 0 auto; background: #fff; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; background: #fff; }
+  .wrap { max-width: 860px; margin: 0 auto; }
 
-/* ── 1. 히어로 헤더 ── */
-.hero {
-  background: #1a2744;
-  padding: 48px 32px 40px;
-  text-align: center;
-}
-.hero .tag {
-  display: inline-block;
-  background: #e8392a;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  padding: 6px 20px;
-  border-radius: 4px;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
-}
-.hero h1 {
-  font-size: 36px;
-  font-weight: 800;
-  color: #fff;
-  line-height: 1.35;
-  margin-bottom: 14px;
-}
-.hero .hero-sub {
-  font-size: 20px;
-  color: #a8c4e8;
-  line-height: 1.6;
-}
+  .hero { background: #1a2744; padding: 70px 40px; text-align: center; }
+  .hero .pill { display: inline-block; background: #e8192c; color: #fff; font-size: 20px;
+    font-weight: 700; padding: 8px 24px; border-radius: 50px; margin-bottom: 28px; }
+  .hero h1 { color: #fff; font-size: 44px; font-weight: 800; line-height: 1.25; margin-bottom: 20px; }
+  .hero p { color: #7ec8e3; font-size: 24px; font-weight: 500; }
 
-/* ── 2. 썸네일 ── */
-.thumb-wrap {
-  background: #f7f7f7;
-  text-align: center;
-  padding: 0;
-}
-.thumb-wrap img {
-  width: 100%;
-  max-width: 860px;
-  display: block;
-}
+  .synergy { background: #F8F5EF; padding: 56px 40px; text-align: center; }
+  .synergy h2 { color: #1a2744; font-size: 28px; font-weight: 800; line-height: 1.5; }
 
-/* ── 3. 시너지 한 줄 ── */
-.synergy-bar {
-  background: #2563a8;
-  padding: 28px 32px;
-  text-align: center;
-}
-.synergy-bar p {
-  font-size: 22px;
-  font-weight: 700;
-  color: #fff;
-  line-height: 1.55;
-}
+  .thumbnail { width: 100%; line-height: 0; }
+  .thumbnail img { width: 100%; display: block; }
 
-/* ── 4. 구성 섹션 ── */
-.section-label {
-  background: #f0f4ff;
-  border-left: 6px solid #1a2744;
-  padding: 18px 28px;
-  font-size: 26px;
-  font-weight: 800;
-  color: #1a2744;
-  margin: 0;
-}
-.comp-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
-  border-top: 3px solid #1a2744;
-}
-.comp-card {
-  padding: 32px 28px;
-  border-right: 2px solid #e0e0e0;
-}
-.comp-card:last-child { border-right: none; }
-.comp-card .comp-num {
-  font-size: 15px;
-  font-weight: 700;
-  color: #888;
-  margin-bottom: 8px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-.comp-card .comp-title {
-  font-size: 30px;
-  font-weight: 800;
-  color: #1a2744;
-  margin-bottom: 10px;
-  line-height: 1.2;
-}
-.comp-card .comp-qty {
-  font-size: 18px;
-  color: #555;
-  margin-bottom: 16px;
-  font-weight: 600;
-}
-.comp-card .comp-eff {
-  background: #1a2744;
-  color: #fff;
-  font-size: 19px;
-  font-weight: 700;
-  padding: 10px 16px;
-  border-radius: 6px;
-  margin-bottom: 8px;
-}
-.comp-card .comp-sub {
-  font-size: 17px;
-  color: #666;
-  line-height: 1.5;
-}
+  .cards { background: #fff; padding: 60px 40px; display: flex; gap: 24px; }
+  .card { flex: 1; border: 2px solid #e8e8e8; border-radius: 20px; padding: 36px 28px; text-align: center; }
+  .card .circle { width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center;
+    justify-content: center; margin: 0 auto 20px; color: #fff; font-size: 20px; font-weight: 700; }
+  .circle-navy { background: #1a2744; }
+  .circle-blue { background: #2563eb; }
+  .card .product-name { color: #1a2744; font-size: 40px; font-weight: 800; margin-bottom: 10px; }
+  .card .qty { color: #555; font-size: 20px; margin-bottom: 16px; }
+  .card .tag { display: inline-block; font-size: 20px; font-weight: 700; padding: 6px 18px;
+    border-radius: 50px; margin-bottom: 14px; }
+  .tag-orange { background: #fff3e0; color: #e65100; }
+  .tag-blue   { background: #e3f0ff; color: #1565c0; }
+  .card .desc { color: #777; font-size: 20px; line-height: 1.6; }
 
-/* ── 5. 복용법 ── */
-.dosage-section {
-  background: #1a2744;
-  padding: 36px 32px;
-}
-.dosage-section .ds-title {
-  font-size: 26px;
-  font-weight: 800;
-  color: #fff;
-  margin-bottom: 24px;
-  text-align: center;
-}
-.dosage-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-.dosage-card {
-  background: rgba(255,255,255,0.12);
-  border-radius: 10px;
-  padding: 22px 20px;
-  text-align: center;
-}
-.dosage-card .dc-label {
-  font-size: 16px;
-  color: #a8c4e8;
-  margin-bottom: 8px;
-  font-weight: 600;
-}
-.dosage-card .dc-text {
-  font-size: 22px;
-  font-weight: 800;
-  color: #fff;
-  line-height: 1.4;
-}
+  .product-info { background: #F8F5EF; padding: 60px 40px; }
+  .product-info h2 { color: #1a2744; font-size: 28px; font-weight: 800; margin-bottom: 32px; text-align: center; }
+  .info-grid { display: flex; gap: 24px; }
+  .info-box { flex: 1; background: #fff; border-radius: 18px; padding: 32px 28px; border-top: 4px solid #1a2744; }
+  .info-box h3 { color: #1a2744; font-size: 22px; font-weight: 800; margin-bottom: 20px;
+    padding-bottom: 12px; border-bottom: 1px solid #e0e0e0; }
+  .info-box ul { list-style: none; padding: 0; }
+  .info-box ul li { font-size: 20px; color: #444; line-height: 1.9; padding-left: 14px; position: relative; }
+  .info-box ul li::before { content: '•'; position: absolute; left: 0; color: #1a2744; font-size: 18px; }
+  .info-box ul li strong { color: #1a2744; font-weight: 700; }
+  .small-text { font-size: 17px; color: #555; line-height: 1.5; }
 
-/* ── 6. 가격 ── */
-.price-section {
-  padding: 40px 32px;
-  background: #fff;
-  text-align: center;
-  border-top: 3px solid #1a2744;
-}
-.price-section .ps-title {
-  font-size: 24px;
-  font-weight: 700;
-  color: #555;
-  margin-bottom: 10px;
-}
-.price-section .ps-regular {
-  font-size: 22px;
-  color: #aaa;
-  margin-bottom: 6px;
-}
-.price-section .ps-regular span {
-  text-decoration: line-through;
-}
-.price-section .ps-badge {
-  display: inline-block;
-  background: #e8392a;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 800;
-  padding: 6px 22px;
-  border-radius: 4px;
-  margin-bottom: 16px;
-}
-.price-section .ps-sale {
-  font-size: 52px;
-  font-weight: 900;
-  color: #1a2744;
-  line-height: 1;
-  margin-bottom: 10px;
-}
-.price-section .ps-note {
-  font-size: 18px;
-  color: #888;
-}
+  .infographic-wrap { background: #FFFFFF; padding: 48px 32px; }
+  .infographic-shadow { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); }
+  .science-badge { font-size: 13px; font-family: 'Courier New', monospace; background-color: #E0F2FE;
+    color: #0369A1; border: 1px solid #0369A1; padding: 4px 10px; border-radius: 20px; display: inline-block; }
+  .bento-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; max-width: 1100px; margin: 0 auto; }
+  @media (max-width: 600px) { .bento-grid { grid-template-columns: 1fr !important; } }
+  .bento-card { background: #fff; border-radius: 16px; padding: 40px 32px; display: flex;
+    flex-direction: column; align-items: flex-start; position: relative; }
+  .bento-card .social-badge { position: absolute; top: 16px; right: 16px; font-size: 12px;
+    font-weight: 700; padding: 4px 10px; border-radius: 20px; color: #fff; }
+  .bento-card .icon-circle { width: 100px; height: 100px; border-radius: 50%; display: flex;
+    align-items: center; justify-content: center; margin-bottom: 28px; }
+  .bento-card h3 { font-size: 26px; font-weight: 800; color: #1a2744; margin-bottom: 14px; }
+  .bento-card .desc-text { font-size: 20px; color: #444; line-height: 1.9; margin-bottom: 20px; }
+  .bento-card .nudge-text { font-size: 14px; color: #888; margin-bottom: 18px; }
+  .bento-card .tag-pill { font-size: 14px; font-weight: 700; padding: 6px 16px; border-radius: 50px; }
+  .urgency-banner { background: #DC2626; color: #fff; font-size: 20px; font-weight: 700;
+    text-align: center; padding: 14px 24px; border-radius: 12px; margin-bottom: 32px;
+    max-width: 1100px; margin-left: auto; margin-right: auto; }
+  .infographic-header { text-align: center; margin-bottom: 48px; }
+  .infographic-header h2 { font-size: 36px; font-weight: 800; color: #1a2744; margin-bottom: 14px; }
+  .infographic-header .accent-bar { width: 60px; height: 4px; background: #F97316;
+    border-radius: 4px; margin: 0 auto; }
+  .infographic-cta { max-width: 1100px; margin: 40px auto 0; background: #F8F5EF;
+    border: 2px solid #1a2744; border-radius: 16px; padding: 20px; text-align: center; }
+  .infographic-cta p { font-size: 22px; font-weight: 700; color: #1a2744; }
 
-/* ── 7. 주의사항 ── */
-.warn-section {
-  background: #f7f7f7;
-  border-top: 3px solid #ddd;
-  padding: 32px;
-}
-.warn-section .ws-title {
-  font-size: 22px;
-  font-weight: 800;
-  color: #333;
-  margin-bottom: 16px;
-}
-.warn-section p {
-  font-size: 18px;
-  color: #555;
-  line-height: 1.9;
-}
+  .dosage { background: #1a2744; padding: 64px 40px; text-align: center; }
+  .dosage h2 { color: #fff; font-size: 32px; font-weight: 800; margin-bottom: 44px; }
+  .dosage-steps { display: flex; align-items: center; justify-content: center; gap: 0; flex-wrap: wrap; }
+  .step-box { background: rgba(255,255,255,0.12); border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 16px; padding: 28px 24px; width: 210px; min-width: 180px; }
+  .step-box .num { color: #f97316; font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+  .step-box .step-text { color: #fff; font-size: 20px; font-weight: 600; line-height: 1.5; }
+  .arrow { color: #f97316; font-size: 32px; font-weight: 700; padding: 0 10px; flex-shrink: 0; }
 
-/* ── 8. 푸터 ── */
-.ep-footer {
-  background: #1a2744;
-  padding: 32px;
-  text-align: center;
-}
-.ep-footer .brand {
-  font-size: 24px;
-  font-weight: 800;
-  color: #fff;
-  letter-spacing: 4px;
-  margin-bottom: 8px;
-}
-.ep-footer .disc {
-  font-size: 15px;
-  color: #7a9bc0;
-  line-height: 1.8;
-}
+  .price { background: #fff; padding: 64px 40px; text-align: center; }
+  .price .original { color: #aaa; font-size: 24px; text-decoration: line-through; margin-bottom: 12px; }
+  .price .badge { display: inline-block; background: #e8192c; color: #fff; font-size: 22px;
+    font-weight: 700; padding: 6px 20px; border-radius: 50px; margin-bottom: 18px; }
+  .price .final { color: #1a2744; font-size: 68px; font-weight: 900; line-height: 1.1; margin-bottom: 14px; }
+  .price .ship-note { color: #999; font-size: 20px; }
 
-@media (max-width: 540px) {
-  .hero h1 { font-size: 26px; }
-  .comp-grid { grid-template-columns: 1fr; }
-  .dosage-grid { grid-template-columns: 1fr; }
-  .price-section .ps-sale { font-size: 40px; }
-  .comp-card .comp-title { font-size: 24px; }
-}
+  .recommend { background: #fff; padding: 60px 40px; }
+  .recommend h2 { color: #1a2744; font-size: 28px; font-weight: 800; margin-bottom: 32px; text-align: center; }
+  .rec-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .rec-card { background: #1e3464; border-radius: 14px; padding: 24px 22px; color: #fff;
+    font-size: 20px; font-weight: 600; line-height: 1.5; display: flex; align-items: center; gap: 14px; }
+  .rec-card .rec-emoji { font-size: 28px; flex-shrink: 0; }
+
+  .warning { background: #F5F5F5; padding: 56px 40px; }
+  .warning h3 { color: #1a2744; font-size: 26px; font-weight: 800; margin-bottom: 24px;
+    padding-bottom: 14px; border-bottom: 2px solid #ddd; }
+  .warning ul { list-style: none; padding: 0; }
+  .warning ul li { color: #444; font-size: 20px; line-height: 1.8; padding-left: 20px;
+    position: relative; margin-bottom: 6px; }
+  .warning ul li::before { content: '·'; position: absolute; left: 4px; color: #888; font-size: 24px; }
+
+  .footer { background: #1a2744; padding: 48px 40px; text-align: center; }
+  .footer .brand { color: #fff; font-size: 26px; font-weight: 800; margin-bottom: 10px; }
+  .footer .sub { color: #7ec8e3; font-size: 20px; }
+
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <!-- 1. 히어로 -->
-  <div class="hero">
-    <div class="tag">건강 세트 상품</div>
-    <h1>마그네슘효능 맞춤<br>건강 케어 세트</h1>
-    <p class="hero-sub">멀티미네랄 + B-콤플렉스 이중 건강 관리</p>
-  </div>
+  <!-- 1. HERO -->
+  <section class="hero">
+    <div class="pill">건강 세트 상품</div>
+    <h1>멀티미네랄 + B-콤플렉스 건강 세트</h1>
+    <p>근육·신경 기능 + 에너지 대사 이중 케어</p>
+  </section>
 
-  <!-- 2. 썸네일 -->
-  <div class="thumb-wrap">
-    <img src="https://choijungho7701-maker.github.io/naver-product-images/thumbnails/SET_004_thumb.jpg" alt="마그네슘효능 건강 세트">
-  </div>
+  <!-- 2. SYNERGY -->
+  <section class="synergy">
+    <h2>멀티미네랄과 B-콤플렉스가 함께일 때<br>더 강해집니다</h2>
+  </section>
 
-  <!-- 3. 시너지 -->
-  <div class="synergy-bar">
-    <p>두 가지 영양소의 시너지로<br>건강을 더욱 효과적으로 지킵니다</p>
-  </div>
+  <!-- 3. THUMBNAIL -->
+  <section class="thumbnail">
+    <img src="https://choijungho7701-maker.github.io/naver-product-images/thumbnails/SET_004_thumb.jpg" alt="멀티미네랄 + B-콤플렉스 건강 세트 대표 이미지" width="100%">
+  </section>
 
-  <!-- 4. 구성 -->
-  <div class="section-label">📦 세트 구성</div>
-  <div class="comp-grid">
-    <div class="comp-card">
-      <div class="comp-num">구성 1</div>
-      <div class="comp-title">멀티미네랄</div>
-      <div class="comp-qty"></div>
-      <div class="comp-eff">건강 유지에 도움</div>
-      <div class="comp-sub">기능성 성분 함유</div>
+  <!-- 인포그래픽 -->
+  <section class="infographic-wrap">
+    <div class="urgency-banner">💪 마그네슘·에너지 복합 세트 — 한정 수량 소진 시 종료</div>
+    <div class="infographic-header">
+      <h2>멀티미네랄 + B-콤플렉스가 함께하면</h2>
+      <div class="accent-bar"></div>
     </div>
-    <div class="comp-card">
-      <div class="comp-num">구성 2</div>
-      <div class="comp-title">B-콤플렉스</div>
-      <div class="comp-qty"></div>
-      <div class="comp-eff">에너지 생성에 필요</div>
-      <div class="comp-sub">비타민 B군 복합</div>
-    </div>
-  </div>
+    <div class="bento-grid">
 
-  <!-- 5. 복용법 -->
-  <div class="dosage-section">
-    <div class="ds-title">💊 복용 방법</div>
-    <div class="dosage-grid">
-      <div class="dosage-card">
-        <div class="dc-label">멀티미네랄</div>
-        <div class="dc-text">하루 1~2포<br>식후 섭취</div>
+      <div class="bento-card infographic-shadow">
+        
+        <div class="icon-circle" style="background:rgba(249,115,22,0.10);">
+          <svg fill="none" height="60" viewBox="0 0 24 24" width="60" xmlns="http://www.w3.org/2000/svg" style="color:#F97316;"><path d="M6 8C6 8 4 9 4 12C4 14 5 15 7 15" stroke="currentColor" stroke-linecap="round" stroke-width="2"/><path d="M8 6C8 6 10 4 13 5C16 6 17 9 16 12C15 14 13 15 11 15" stroke="currentColor" stroke-linecap="round" stroke-width="2"/><path d="M7 15C7 15 8 18 11 18C14 18 16 16 18 14C20 12 20 9 19 7" stroke="currentColor" stroke-linecap="round" stroke-width="2"/><circle cx="19" cy="6" r="2" fill="currentColor"/></svg>
+        </div>
+        <div style="margin-bottom:14px;"><span class="science-badge">Magnesium · Zinc · Calcium · Selenium</span></div>
+        <h3>근육 기능에 도움</h3>
+        <p class="desc-text">마그네슘이 300가지 이상의 효소 반응에 관여해 근육과 신경 기능 유지를 돕습니다.</p>
+        
+        <span class="tag-pill" style="background:rgba(249,115,22,0.10);color:#F97316;">멀티미네랄 핵심 성분</span>
       </div>
-      <div class="dosage-card">
-        <div class="dc-label">B-콤플렉스</div>
-        <div class="dc-text">하루 1~2포<br>공복 또는 식후</div>
+      <div class="bento-card infographic-shadow">
+        
+        <div class="icon-circle" style="background:rgba(37,99,168,0.10);">
+          <svg fill="none" height="60" viewBox="0 0 24 24" width="60" xmlns="http://www.w3.org/2000/svg" style="color:#2563A8;"><path d="M13 3L6 14H12L11 21L18 10H12L13 3Z" fill="currentColor"/></svg>
+        </div>
+        <div style="margin-bottom:14px;"><span class="science-badge">Vitamin B1·B2·B3·B5·B6·B12</span></div>
+        <h3>에너지 생성에 도움</h3>
+        <p class="desc-text">비타민B군이 에너지 생성 대사에 필요한 보조인자로 작용합니다.</p>
+        
+        <span class="tag-pill" style="background:rgba(37,99,168,0.10);color:#2563A8;">B-콤플렉스 핵심 성분</span>
+      </div>
+      <div class="bento-card infographic-shadow">
+        
+        <div class="icon-circle" style="background:rgba(245,158,11,0.10);">
+          <svg fill="none" height="60" viewBox="0 0 24 24" width="60" xmlns="http://www.w3.org/2000/svg" style="color:#F59E0B;"><path d="M12 2l2.9 6.3L22 9.3l-5.4 5 1.5 7.3L12 18l-6.1 3.6 1.5-7.3L2 9.3l7.1-1L12 2z" fill="currentColor" fill-opacity="0.7" stroke="currentColor" stroke-width="0.5"/></svg>
+        </div>
+        <div style="margin-bottom:14px;"><span class="science-badge">Mg · B-Complex · CoFactor</span></div>
+        <h3>피로 개선에 도움</h3>
+        <p class="desc-text">마그네슘과 비타민B군이 신경계 피로 회복 지원에 도움을 줍니다.</p>
+        
+        <span class="tag-pill" style="background:rgba(245,158,11,0.10);color:#F59E0B;">피로 개선</span>
+      </div>
+      <div class="bento-card infographic-shadow">
+        
+        <div class="icon-circle" style="background:rgba(16,185,129,0.10);">
+          <svg fill="none" height="60" viewBox="0 0 24 24" width="60" xmlns="http://www.w3.org/2000/svg" style="color:#10B981;"><circle cx="9" cy="12" r="5" stroke="currentColor" stroke-width="2"/><circle cx="15" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 9C12.8 10 12.8 14 12 15" stroke="currentColor" stroke-linecap="round" stroke-width="2"/></svg>
+        </div>
+        <div style="margin-bottom:14px;"><span class="science-badge">Mineral × Energy Synergy</span></div>
+        <h3>이중 시너지 효과</h3>
+        <p class="desc-text">미네랄 보충과 에너지 대사를 동시에 지원하는 복합 케어를 돕습니다.</p>
+        
+        <span class="tag-pill" style="background:rgba(16,185,129,0.10);color:#10B981;">복합 케어</span>
       </div>
     </div>
-  </div>
+    <div class="infographic-cta">
+      <p>두 성분의 조합이 미네랄 균형과 에너지 대사를 동시에 지킵니다</p>
+    </div>
+  </section>
 
-  <!-- 6. 가격 -->
-  <div class="price-section">
-    <div class="ps-title">세트 특가</div>
-    <div class="ps-regular">정상가 <span>93,770원</span></div>
-    <div class="ps-badge">25% 할인</div>
-    <div class="ps-sale">70,330원</div>
-    <div class="ps-note">배송비 4,000원 · 스마트스토어 기준</div>
-  </div>
+  <!-- 4. CARDS -->
+  <section class="cards">
+    <div class="card">
+      <div class="circle circle-navy">구성1</div>
+      <div class="product-name">멀티미네랄</div>
+      <div class="qty">430정</div>
+      <span class="tag tag-orange">근육 기능에 도움</span>
+      <p class="desc">마그네슘·아연·칼슘·셀레늄 포함</p>
+    </div>
+    <div class="card">
+      <div class="circle circle-blue">구성2</div>
+      <div class="product-name">B-콤플렉스</div>
+      <div class="qty">500정</div>
+      <span class="tag tag-blue">에너지 생성에 도움</span>
+      <p class="desc">비타민B군 8종 + 비타민C</p>
+    </div>
+  </section>
 
-  <!-- 7. 주의사항 -->
-  <div class="warn-section">
-    <div class="ws-title">⚠️ 섭취 시 주의사항</div>
-    <p>
-      · 본 제품은 건강기능식품으로 질병의 예방 및 치료를 위한 의약품이 아닙니다.<br>
-      · 알레르기 체질이시거나 특정 성분에 과민반응이 있으신 분은 섭취 전 전문가와 상담하세요.<br>
-      · 의약품 복용 중이신 분은 의사 또는 약사와 상담 후 섭취하시기 바랍니다.<br>
-      · 어린이의 손이 닿지 않는 곳에 보관하세요.<br>
-      · 직사광선 및 고온다습한 장소를 피해 서늘한 곳에 보관하세요.
-    </p>
-  </div>
+  <!-- 제품 정보 -->
+  <section class="product-info">
+    <h2>제품 구성 정보</h2>
+    <div class="info-grid">
+      <div class="info-box">
+        <h3>구성 1 · 멀티미네랄</h3>
+        <ul><li><strong>구성:</strong> 430정</li><li><strong>내용량:</strong> 1,465mg × 430정</li><li><strong>성분:</strong> <span class="small-text">비타민·미네랄 복합 (마그네슘·아연·칼슘·셀레늄 등 포함), 남녀 모두 섭취 가능</span></li><li><strong>섭취방법:</strong> 1일 1회, 1회 1정을 충분한 물과 함께 섭취하십시오</li><li><strong>보관방법:</strong> 직사광선을 피해 서늘하고 건조한 곳에 보관, 어린이 손에 닿지 않도록 주의</li></ul>
+      </div>
+      <div class="info-box">
+        <h3>구성 2 · B-콤플렉스</h3>
+        <ul><li><strong>구성:</strong> 500정</li><li><strong>내용량:</strong> 1,236mg × 500정</li><li><strong>성분:</strong> <span class="small-text">비타민B군 8종(B1·B2·B3·B5·B6·B7·B9·B12) + 비타민C 포함</span></li><li><strong>특징:</strong> 체내 에너지 생성에 필요한 비타민B군 복합 제제</li><li><strong>섭취방법:</strong> 1일 1회, 1회 1정을 충분한 물과 함께 섭취하십시오</li><li><strong>보관방법:</strong> 직사광선을 피해 서늘하고 건조한 곳에 보관</li></ul>
+      </div>
+    </div>
+  </section>
 
-  <!-- 8. 푸터 -->
-  <div class="ep-footer">
+  <!-- 5. DOSAGE -->
+  <section class="dosage">
+    <h2>올바른 복용 방법</h2>
+    <div class="dosage-steps">
+<div class="step-box"><div class="num">① 식사 중</div><div class="step-text">멀티미네랄
+1정</div></div><div class="arrow">→</div><div class="step-box"><div class="num">② 식사 중</div><div class="step-text">B-콤플렉스
+1정</div></div><div class="arrow">→</div><div class="step-box"><div class="num">③ 꾸준히</div><div class="step-text">3개월 이상
+지속 복용</div></div>
+    </div>
+  </section>
+
+  <!-- 6. PRICE -->
+  <section class="price">
+    <p class="original">47,980원</p>
+    <div class="badge">7% 할인</div>
+    <div class="final">44,620원</div>
+    <p class="ship-note">배송비 포함 가격</p>
+  </section>
+
+  <!-- 이런 분께 추천 -->
+  <section class="recommend">
+    <h2>이런 분께 추천드립니다</h2>
+    <div class="rec-grid">
+<div class="rec-card"><span class="rec-emoji">💪</span><span>근육이 자주 뭉치시는 분</span></div><div class="rec-card"><span class="rec-emoji">🔋</span><span>에너지가 부족하신 분</span></div><div class="rec-card"><span class="rec-emoji">😴</span><span>피로가 자주 쌓이시는 분</span></div><div class="rec-card"><span class="rec-emoji">🧠</span><span>신경이 예민하신 분</span></div><div class="rec-card"><span class="rec-emoji">🌿</span><span>영양 균형이 걱정되시는 분</span></div><div class="rec-card"><span class="rec-emoji">🔄</span><span>건강을 종합적으로 관리하고 싶으신 분</span></div>
+    </div>
+  </section>
+
+  <!-- 7. WARNING -->
+  <section class="warning">
+    <h3>섭취 시 주의사항</h3>
+    <ul>
+      <li>본 제품은 건강기능식품으로 질병의 예방 및 치료를 위한 의약품이 아닙니다.</li>
+      <li>알레르기 체질이거나 특이 체질인 경우 원료를 확인하시고 섭취하십시오.</li>
+      <li>의약품 복용 시 전문가(의사, 약사 등)와 상담 후 섭취하십시오.</li>
+      <li>어린이 손에 닿지 않는 곳에 보관하십시오.</li>
+      <li>직사광선 및 고온다습한 장소를 피해 보관하십시오.</li>
+    </ul>
+  </section>
+
+  <!-- 8. FOOTER -->
+  <footer class="footer">
     <div class="brand">이지프로핏</div>
-    <div class="disc">
-      본 상품은 건강기능식품 판매업 신고 업체에서 판매합니다.<br>
-      표시된 기능성은 식품의약품안전처에서 인정한 내용입니다.
-    </div>
-  </div>
+    <div class="sub">건강기능식품 판매업 신고 업체</div>
+  </footer>
 
 </div>
 </body>
