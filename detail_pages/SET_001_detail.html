@@ -2,337 +2,706 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>어버이날 건강 세트</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>어버이날 맞춤 건강 케어 세트</title>
 <style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body {
-  font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', sans-serif;
-  background: #f0f0f0;
-  color: #111;
-}
-.wrap { max-width: 860px; margin: 0 auto; background: #fff; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; background: #fff; }
+  .wrap { max-width: 860px; margin: 0 auto; }
 
-/* ── 1. 히어로 헤더 ── */
-.hero {
-  background: #1a2744;
-  padding: 48px 32px 40px;
-  text-align: center;
-}
-.hero .tag {
-  display: inline-block;
-  background: #e8392a;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  padding: 6px 20px;
-  border-radius: 4px;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
-}
-.hero h1 {
-  font-size: 36px;
-  font-weight: 800;
-  color: #fff;
-  line-height: 1.35;
-  margin-bottom: 14px;
-}
-.hero .hero-sub {
-  font-size: 20px;
-  color: #a8c4e8;
-  line-height: 1.6;
-}
+  /* 1. HERO */
+  .hero {
+    background: #1a2744;
+    padding: 70px 40px;
+    text-align: center;
+  }
+  .hero .pill {
+    display: inline-block;
+    background: #e8192c;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 8px 24px;
+    border-radius: 50px;
+    margin-bottom: 28px;
+  }
+  .hero h1 {
+    color: #fff;
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 1.25;
+    margin-bottom: 20px;
+  }
+  .hero p {
+    color: #7ec8e3;
+    font-size: 24px;
+    font-weight: 500;
+  }
 
-/* ── 2. 썸네일 ── */
-.thumb-wrap {
-  background: #f7f7f7;
-  text-align: center;
-  padding: 0;
-}
-.thumb-wrap img {
-  width: 100%;
-  max-width: 860px;
-  display: block;
-}
+  /* 2. SYNERGY */
+  .synergy {
+    background: #F8F5EF;
+    padding: 56px 40px;
+    text-align: center;
+  }
+  .synergy h2 {
+    color: #1a2744;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.5;
+  }
 
-/* ── 3. 시너지 한 줄 ── */
-.synergy-bar {
-  background: #2563a8;
-  padding: 28px 32px;
-  text-align: center;
-}
-.synergy-bar p {
-  font-size: 22px;
-  font-weight: 700;
-  color: #fff;
-  line-height: 1.55;
-}
+  /* 3. THUMBNAIL */
+  .thumbnail {
+    width: 100%;
+    line-height: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    display: block;
+  }
 
-/* ── 4. 구성 섹션 ── */
-.section-label {
-  background: #f0f4ff;
-  border-left: 6px solid #1a2744;
-  padding: 18px 28px;
-  font-size: 26px;
-  font-weight: 800;
-  color: #1a2744;
-  margin: 0;
-}
-.comp-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
-  border-top: 3px solid #1a2744;
-}
-.comp-card {
-  padding: 32px 28px;
-  border-right: 2px solid #e0e0e0;
-}
-.comp-card:last-child { border-right: none; }
-.comp-card .comp-num {
-  font-size: 15px;
-  font-weight: 700;
-  color: #888;
-  margin-bottom: 8px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-.comp-card .comp-title {
-  font-size: 30px;
-  font-weight: 800;
-  color: #1a2744;
-  margin-bottom: 10px;
-  line-height: 1.2;
-}
-.comp-card .comp-qty {
-  font-size: 18px;
-  color: #555;
-  margin-bottom: 16px;
-  font-weight: 600;
-}
-.comp-card .comp-eff {
-  background: #1a2744;
-  color: #fff;
-  font-size: 19px;
-  font-weight: 700;
-  padding: 10px 16px;
-  border-radius: 6px;
-  margin-bottom: 8px;
-}
-.comp-card .comp-sub {
-  font-size: 17px;
-  color: #666;
-  line-height: 1.5;
-}
+  /* 4. CARDS */
+  .cards {
+    background: #fff;
+    padding: 60px 40px;
+    display: flex;
+    gap: 24px;
+  }
+  .card {
+    flex: 1;
+    border: 2px solid #e8e8e8;
+    border-radius: 20px;
+    padding: 36px 28px;
+    text-align: center;
+  }
+  .card .circle {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .circle-navy { background: #1a2744; }
+  .circle-blue { background: #2563eb; }
+  .card .product-name {
+    color: #1a2744;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  .card .qty {
+    color: #555;
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  .card .tag {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 6px 18px;
+    border-radius: 50px;
+    margin-bottom: 14px;
+  }
+  .tag-orange { background: #fff3e0; color: #e65100; }
+  .tag-blue   { background: #e3f0ff; color: #1565c0; }
+  .card .desc {
+    color: #777;
+    font-size: 20px;
+    line-height: 1.6;
+  }
 
-/* ── 5. 복용법 ── */
-.dosage-section {
-  background: #1a2744;
-  padding: 36px 32px;
-}
-.dosage-section .ds-title {
-  font-size: 26px;
-  font-weight: 800;
-  color: #fff;
-  margin-bottom: 24px;
-  text-align: center;
-}
-.dosage-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-.dosage-card {
-  background: rgba(255,255,255,0.12);
-  border-radius: 10px;
-  padding: 22px 20px;
-  text-align: center;
-}
-.dosage-card .dc-label {
-  font-size: 16px;
-  color: #a8c4e8;
-  margin-bottom: 8px;
-  font-weight: 600;
-}
-.dosage-card .dc-text {
-  font-size: 22px;
-  font-weight: 800;
-  color: #fff;
-  line-height: 1.4;
-}
+  /* NEW: 제품 정보 */
+  .product-info {
+    background: #F8F5EF;
+    padding: 60px 40px;
+  }
+  .product-info h2 {
+    color: #1a2744;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  .info-grid {
+    display: flex;
+    gap: 24px;
+  }
+  .info-box {
+    flex: 1;
+    background: #fff;
+    border-radius: 18px;
+    padding: 32px 28px;
+    border-top: 4px solid #1a2744;
+  }
+  .info-box h3 {
+    color: #1a2744;
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .info-box ul {
+    list-style: none;
+    padding: 0;
+  }
+  .info-box ul li {
+    font-size: 20px;
+    color: #444;
+    line-height: 1.9;
+    padding-left: 14px;
+    position: relative;
+  }
+  .info-box ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #1a2744;
+    font-size: 18px;
+  }
+  .info-box ul li strong {
+    color: #1a2744;
+    font-weight: 700;
+  }
 
-/* ── 6. 가격 ── */
-.price-section {
-  padding: 40px 32px;
-  background: #fff;
-  text-align: center;
-  border-top: 3px solid #1a2744;
-}
-.price-section .ps-title {
-  font-size: 24px;
-  font-weight: 700;
-  color: #555;
-  margin-bottom: 10px;
-}
-.price-section .ps-regular {
-  font-size: 22px;
-  color: #aaa;
-  margin-bottom: 6px;
-}
-.price-section .ps-regular span {
-  text-decoration: line-through;
-}
-.price-section .ps-badge {
-  display: inline-block;
-  background: #e8392a;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 800;
-  padding: 6px 22px;
-  border-radius: 4px;
-  margin-bottom: 16px;
-}
-.price-section .ps-sale {
-  font-size: 52px;
-  font-weight: 900;
-  color: #1a2744;
-  line-height: 1;
-  margin-bottom: 10px;
-}
-.price-section .ps-note {
-  font-size: 18px;
-  color: #888;
-}
+  .small-text {
+    font-size: 17px;
+    color: #555;
+    line-height: 1.5;
+  }
 
-/* ── 7. 주의사항 ── */
-.warn-section {
-  background: #f7f7f7;
-  border-top: 3px solid #ddd;
-  padding: 32px;
-}
-.warn-section .ws-title {
-  font-size: 22px;
-  font-weight: 800;
-  color: #333;
-  margin-bottom: 16px;
-}
-.warn-section p {
-  font-size: 18px;
-  color: #555;
-  line-height: 1.9;
-}
+  /* INFOGRAPHIC-SECTION */
+  .infographic-wrap {
+    background: #FFFFFF;
+    padding: 48px 32px;
+  }
+  .infographic-shadow {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+  .science-badge {
+    font-size: 13px;
+    font-family: 'Courier New', monospace;
+    background-color: #E0F2FE;
+    color: #0369A1;
+    border: 1px solid #0369A1;
+    padding: 4px 10px;
+    border-radius: 20px;
+    display: inline-block;
+  }
+  .bento-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  @media (max-width: 600px) {
+    .bento-grid { grid-template-columns: 1fr !important; }
+  }
+  .bento-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+  .bento-card .social-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    color: #fff;
+  }
+  .bento-card .icon-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+  }
+  .bento-card h3 {
+    font-size: 26px;
+    font-weight: 800;
+    color: #1a2744;
+    margin-bottom: 14px;
+  }
+  .bento-card .desc-text {
+    font-size: 20px;
+    color: #444;
+    line-height: 1.9;
+    margin-bottom: 20px;
+  }
+  .bento-card .nudge-text {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 18px;
+  }
+  .bento-card .tag-pill {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 6px 16px;
+    border-radius: 50px;
+  }
+  .urgency-banner {
+    background: #DC2626;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding: 14px 24px;
+    border-radius: 12px;
+    margin-bottom: 32px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .infographic-header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .infographic-header h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1a2744;
+    margin-bottom: 14px;
+  }
+  .infographic-header .accent-bar {
+    width: 60px;
+    height: 4px;
+    background: #F97316;
+    border-radius: 4px;
+    margin: 0 auto;
+  }
+  .infographic-cta {
+    max-width: 1100px;
+    margin: 40px auto 0;
+    background: #F8F5EF;
+    border: 2px solid #1a2744;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+  }
+  .infographic-cta p {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a2744;
+  }
 
-/* ── 8. 푸터 ── */
-.ep-footer {
-  background: #1a2744;
-  padding: 32px;
-  text-align: center;
-}
-.ep-footer .brand {
-  font-size: 24px;
-  font-weight: 800;
-  color: #fff;
-  letter-spacing: 4px;
-  margin-bottom: 8px;
-}
-.ep-footer .disc {
-  font-size: 15px;
-  color: #7a9bc0;
-  line-height: 1.8;
-}
+  /* 5. DOSAGE */
+  .dosage {
+    background: #1a2744;
+    padding: 64px 40px;
+    text-align: center;
+  }
+  .dosage h2 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 44px;
+  }
+  .dosage-steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    flex-wrap: wrap;
+  }
+  .step-box {
+    background: rgba(255,255,255,0.12);
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 16px;
+    padding: 28px 24px;
+    width: 210px;
+    min-width: 180px;
+  }
+  .step-box .num {
+    color: #f97316;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .step-box .step-text {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+  .arrow {
+    color: #f97316;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 0 10px;
+    flex-shrink: 0;
+  }
 
-@media (max-width: 540px) {
-  .hero h1 { font-size: 26px; }
-  .comp-grid { grid-template-columns: 1fr; }
-  .dosage-grid { grid-template-columns: 1fr; }
-  .price-section .ps-sale { font-size: 40px; }
-  .comp-card .comp-title { font-size: 24px; }
-}
+  /* 6. PRICE */
+  .price {
+    background: #fff;
+    padding: 64px 40px;
+    text-align: center;
+  }
+  .price .original {
+    color: #aaa;
+    font-size: 24px;
+    text-decoration: line-through;
+    margin-bottom: 12px;
+  }
+  .price .badge {
+    display: inline-block;
+    background: #e8192c;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 6px 20px;
+    border-radius: 50px;
+    margin-bottom: 18px;
+  }
+  .price .final {
+    color: #1a2744;
+    font-size: 68px;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 14px;
+  }
+  .price .ship-note {
+    color: #999;
+    font-size: 20px;
+  }
+
+  /* NEW: 이런 분께 추천 */
+  .recommend {
+    background: #fff;
+    padding: 60px 40px;
+  }
+  .recommend h2 {
+    color: #1a2744;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  .rec-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .rec-card {
+    background: #1e3464;
+    border-radius: 14px;
+    padding: 24px 22px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .rec-card .rec-emoji {
+    font-size: 28px;
+    flex-shrink: 0;
+  }
+
+  /* 7. WARNING */
+  .warning {
+    background: #F5F5F5;
+    padding: 56px 40px;
+  }
+  .warning h3 {
+    color: #1a2744;
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 24px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #ddd;
+  }
+  .warning ul {
+    list-style: none;
+    padding: 0;
+  }
+  .warning ul li {
+    color: #444;
+    font-size: 20px;
+    line-height: 1.8;
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 6px;
+  }
+  .warning ul li::before {
+    content: '·';
+    position: absolute;
+    left: 4px;
+    color: #888;
+    font-size: 24px;
+  }
+
+  /* 8. FOOTER */
+  .footer {
+    background: #1a2744;
+    padding: 48px 40px;
+    text-align: center;
+  }
+  .footer .brand {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  .footer .sub {
+    color: #7ec8e3;
+    font-size: 20px;
+  }
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <!-- 1. 히어로 -->
-  <div class="hero">
-    <div class="tag">건강 세트 상품</div>
-    <h1>어버이날 맞춤<br>건강 케어 세트</h1>
-    <p class="hero-sub">홍삼 + 유산균 이중 건강 관리</p>
-  </div>
+  <!-- 1. HERO -->
+  <section class="hero">
+    <div class="pill">건강 세트 상품</div>
+    <h1>어버이날 맞춤 건강 케어 세트</h1>
+    <p>홍삼 + 유산균 이중 건강 관리</p>
+  </section>
 
-  <!-- 2. 썸네일 -->
-  <div class="thumb-wrap">
-    <img src="https://choijungho7701-maker.github.io/naver-product-images/thumbnails/SET_001_thumb.jpg" alt="어버이날 건강 세트">
-  </div>
+  <!-- 2. SYNERGY -->
+  <section class="synergy">
+    <h2>두 가지가 함께일 때<br>더 강해집니다</h2>
+  </section>
 
-  <!-- 3. 시너지 -->
-  <div class="synergy-bar">
-    <p>두 가지 영양소의 시너지로<br>건강을 더욱 효과적으로 지킵니다</p>
-  </div>
+  <!-- 3. THUMBNAIL -->
+  <section class="thumbnail">
+    <img src="https://choijungho7701-maker.github.io/naver-product-images/thumbnails/SET_001_thumb.jpg"
+         alt="어버이날 맞춤 건강 케어 세트 대표 이미지" width="100%">
+  </section>
 
-  <!-- 4. 구성 -->
-  <div class="section-label">📦 세트 구성</div>
-  <div class="comp-grid">
-    <div class="comp-card">
-      <div class="comp-num">구성 1</div>
-      <div class="comp-title">홍삼</div>
-      <div class="comp-qty">60포, 2개월분</div>
-      <div class="comp-eff">면역 건강에 도움</div>
-      <div class="comp-sub">홍삼 진세노사이드 함유</div>
+  <!-- 인포그래픽 (소셜프루프 + 긴급 배너) -->
+  <section class="infographic-wrap">
+    <!-- 긴급 배너: 5월 한정 -->
+    <div class="urgency-banner">🔥 5월 한정 세트 구성 — 재고 소진 시 종료</div>
+
+    <!-- 헤더 -->
+    <div class="infographic-header">
+      <h2>홍삼 + 유산균이 함께하면</h2>
+      <div class="accent-bar"></div>
     </div>
-    <div class="comp-card">
-      <div class="comp-num">구성 2</div>
-      <div class="comp-title">유산균</div>
-      <div class="comp-qty">120포, 4개월분</div>
-      <div class="comp-eff">장 건강에 도움</div>
-      <div class="comp-sub">유익균 증식 지원</div>
-    </div>
-  </div>
 
-  <!-- 5. 복용법 -->
-  <div class="dosage-section">
-    <div class="ds-title">💊 복용 방법</div>
-    <div class="dosage-grid">
-      <div class="dosage-card">
-        <div class="dc-label">홍삼</div>
-        <div class="dc-text">하루 1~2포<br>식후 섭취</div>
+    <!-- 2×2 벤토 그리드 -->
+    <div class="bento-grid">
+
+      <!-- 카드 1: 면역 (홍삼 · ★5.0 / 50건) -->
+      <div class="bento-card infographic-shadow">
+        <span class="social-badge" style="background:#F97316;">★ 5.0 (50건)</span>
+        <div class="icon-circle" style="background:rgba(249,115,22,0.10);">
+          <svg fill="none" height="60" viewBox="0 0 24 24" width="60" xmlns="http://www.w3.org/2000/svg" style="color:#F97316;">
+            <path d="M12 2L4 5V11C4 16.19 7.41 21.05 12 22.5C16.59 21.05 20 16.19 20 11V5L12 2Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="12" cy="12" fill="currentColor" fill-opacity="0.6" r="3"/>
+            <path d="M10 12H14M12 10V14" stroke="white" stroke-linecap="round" stroke-width="1"/>
+            <circle cx="17" cy="8" fill="currentColor" r="1"/>
+            <circle cx="7" cy="14" fill="currentColor" r="1"/>
+          </svg>
+        </div>
+        <div style="margin-bottom:14px;"><span class="science-badge">Ginsenoside Rg1·Rb1·Rg3</span></div>
+        <h3>면역 건강에 도움</h3>
+        <p class="desc-text">홍삼 진세노사이드가 NK세포 활성화를 돕습니다.</p>
+        <span class="tag-pill" style="background:rgba(249,115,22,0.10);color:#F97316;">홍삼 핵심 성분</span>
       </div>
-      <div class="dosage-card">
-        <div class="dc-label">유산균</div>
-        <div class="dc-text">하루 1~2포<br>공복 또는 식후</div>
+
+      <!-- 카드 2: 장 건강 (유산균 · ★4.9 / 386건) -->
+      <div class="bento-card infographic-shadow">
+        <span class="social-badge" style="background:#2563A8;">★ 4.9 (386건)</span>
+        <div class="icon-circle" style="background:rgba(37,99,168,0.10);">
+          <svg fill="none" height="60" viewBox="0 0 24 24" width="60" xmlns="http://www.w3.org/2000/svg" style="color:#2563A8;">
+            <path d="M17.5 13.5C17.5 16 15.5 18 12 18C8.5 18 6.5 16 6.5 13.5C6.5 11 8.5 9 12 9C15.5 9 17.5 7 17.5 4.5" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"/>
+            <path d="M6.5 4.5C6.5 7 8.5 9 12 9" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"/>
+            <circle cx="15" cy="12" fill="currentColor" r="1.5"/>
+            <circle cx="9" cy="15" fill="currentColor" r="1.5"/>
+            <circle cx="12" cy="6" fill="currentColor" r="1"/>
+          </svg>
+        </div>
+        <div style="margin-bottom:14px;"><span class="science-badge">Lactobacillus · Bifidobacterium</span></div>
+        <h3>장 건강에 도움</h3>
+        <p class="desc-text">유산균이 유익균 증식을 도와 장 환경 개선을 돕습니다.</p>
+        <p class="nudge-text">6,574명이 찜 · 최근 42,564건 주문</p>
+        <span class="tag-pill" style="background:rgba(37,99,168,0.10);color:#2563A8;">유산균 핵심 성분</span>
+      </div>
+
+      <!-- 카드 3: 활력 -->
+      <div class="bento-card infographic-shadow">
+        <div class="icon-circle" style="background:rgba(245,158,11,0.10);">
+          <svg fill="none" height="60" viewBox="0 0 24 24" width="60" xmlns="http://www.w3.org/2000/svg" style="color:#F59E0B;">
+            <path d="M13 3L6 14H12L11 21L18 10H12L13 3Z" fill="currentColor"/>
+            <path d="M18 5L20 4M20 19L18 18M4 5L6 6M4 19L6 18" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div style="margin-bottom:14px;"><span class="science-badge">Ginsenoside · Saponin</span></div>
+        <h3>활력 유지에 도움</h3>
+        <p class="desc-text">홍삼 사포닌이 일상의 활력 유지에 도움을 줍니다.</p>
+        <span class="tag-pill" style="background:rgba(245,158,11,0.10);color:#F59E0B;">피로 개선</span>
+      </div>
+
+      <!-- 카드 4: 이중 시너지 -->
+      <div class="bento-card infographic-shadow">
+        <div class="icon-circle" style="background:rgba(16,185,129,0.10);">
+          <svg fill="none" height="60" viewBox="0 0 24 24" width="60" xmlns="http://www.w3.org/2000/svg" style="color:#10B981;">
+            <circle cx="9" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+            <circle cx="15" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+            <path d="M12 9C12.8 10 12.8 14 12 15" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+          </svg>
+        </div>
+        <div style="margin-bottom:14px;"><span class="science-badge">Immune × Gut Synergy</span></div>
+        <h3>이중 시너지 효과</h3>
+        <p class="desc-text">두 성분의 조합으로 면역과 장 건강을 동시에 돕습니다.</p>
+        <span class="tag-pill" style="background:rgba(16,185,129,0.10);color:#10B981;">복합 케어</span>
+      </div>
+
+    </div><!-- /.bento-grid -->
+
+    <!-- CTA 박스 -->
+    <div class="infographic-cta">
+      <p>두 성분의 조합이 건강을 더욱 효과적으로 지킵니다</p>
+    </div>
+  </section>
+
+  <!-- 4. CARDS -->
+  <section class="cards">
+    <div class="card">
+      <div class="circle circle-navy">구성1</div>
+      <div class="product-name">홍삼</div>
+      <div class="qty">60포 · 2개월분</div>
+      <span class="tag tag-orange">면역 건강에 도움</span>
+      <p class="desc">홍삼 진세노사이드 함유</p>
+    </div>
+    <div class="card">
+      <div class="circle circle-blue">구성2</div>
+      <div class="product-name">유산균</div>
+      <div class="qty">120포 · 4개월분</div>
+      <span class="tag tag-blue">장 건강에 도움</span>
+      <p class="desc">유익균 증식 지원</p>
+    </div>
+  </section>
+
+  <!-- 제품 정보 -->
+  <section class="product-info">
+    <h2>제품 구성 정보</h2>
+    <div class="info-grid">
+      <div class="info-box">
+        <h3>구성 1 · 홍삼</h3>
+        <ul>
+          <li><strong>구성:</strong> 60포, 2개월분</li>
+          <li><strong>내용량:</strong> 1g x 60포(60g)</li>
+          <li><strong>성분:</strong> <span class="small-text">4년근 홍삼 100%[국내산 홍삼농축액분말 97%(진세노사이드 Rg1, Rb1 및 Rg3의 합 20.7mg/g, 고형분 93% 이상), 국내산 홍삼분말 3%(진세노사이드 Rg1, Rb1 및 Rg3의 합 4mg/g, 고형분 93% 이상)]</span></li>
+          <li><strong>함량:</strong> 진세노사이드 Rg1+Rb1+Rg3의 합 20mg / 1포</li>
+          <li><strong>섭취방법:</strong> 1일 1회, 1회 1포를 씹어 드시거나 물에 녹여 섭취하십시오</li>
+          <li><strong>보관방법:</strong> 습기 및 직사광선을 피하여 서늘한 곳에 보관. 냉장고 보관은 피해주십시오</li>
+          <li><strong>유통기한:</strong> 제조일로부터 24개월</li>
+        </ul>
+      </div>
+      <div class="info-box">
+        <h3>구성 2 · 유산균</h3>
+        <ul>
+          <li><strong>구성:</strong> 120포, 4개월분</li>
+          <li><strong>내용량:</strong> 300g (2.5g × 30포 × 4박스)</li>
+          <li><strong>성분:</strong> <span class="small-text">유산균혼합분말 [Lactiplantibacillus plantarum, Lacticaseibacillus rhamnosus, L. casei, Bifidobacterium longum, B. breve, L. paracasei, B. bifidum, Streptococcus thermophilus, Limosilactobacillus fermentum, B. lactis, L. acidophilus, L. helveticus 등 10종+], 난소화성말토덱스트린, 자일리톨, 프락토올리고당, 갈락토올리고당, 김치유산균추출물분말 외 [우유·대두 함유]</span></li>
+          <li><strong>함량:</strong> 1포당 생균수 30억 CFU (프로바이오틱스 보장균)</li>
+          <li><strong>섭취방법:</strong> 1일 1회, 1회 1포를 그대로 섭취하거나 물·음료와 함께 섭취</li>
+          <li><strong>보관방법:</strong> 습기가 적고 직사광선을 받지 않는 실온에 보관. 어린이 손에 닿지 않도록 주의</li>
+          <li><strong>유통기한:</strong> 제조일로부터 12개월</li>
+          <li><strong>영양정보:</strong> 1포(2.5g)당 열량 10kcal, 탄수화물 2g, 단백질 0g, 지방 0g, 나트륨 0mg</li>
+        </ul>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- 6. 가격 -->
-  <div class="price-section">
-    <div class="ps-title">세트 특가</div>
-    <div class="ps-regular">정상가 <span>256,920원</span></div>
-    <div class="ps-badge">25% 할인</div>
-    <div class="ps-sale">192,690원</div>
-    <div class="ps-note">배송비 4,000원 · 스마트스토어 기준</div>
-  </div>
+  <!-- 5. DOSAGE -->
+  <section class="dosage">
+    <h2>올바른 복용 방법</h2>
+    <div class="dosage-steps">
+      <div class="step-box">
+        <div class="num">① 아침</div>
+        <div class="step-text">식후<br>홍삼 1포</div>
+      </div>
+      <div class="arrow">→</div>
+      <div class="step-box">
+        <div class="num">② 공복</div>
+        <div class="step-text">공복<br>유산균 1포</div>
+      </div>
+      <div class="arrow">→</div>
+      <div class="step-box">
+        <div class="num">③ 꾸준히</div>
+        <div class="step-text">3개월 이상<br>지속 복용</div>
+      </div>
+    </div>
+  </section>
 
-  <!-- 7. 주의사항 -->
-  <div class="warn-section">
-    <div class="ws-title">⚠️ 섭취 시 주의사항</div>
-    <p>
-      · 본 제품은 건강기능식품으로 질병의 예방 및 치료를 위한 의약품이 아닙니다.<br>
-      · 알레르기 체질이시거나 특정 성분에 과민반응이 있으신 분은 섭취 전 전문가와 상담하세요.<br>
-      · 의약품 복용 중이신 분은 의사 또는 약사와 상담 후 섭취하시기 바랍니다.<br>
-      · 어린이의 손이 닿지 않는 곳에 보관하세요.<br>
-      · 직사광선 및 고온다습한 장소를 피해 서늘한 곳에 보관하세요.
-    </p>
-  </div>
+  <!-- 6. PRICE -->
+  <section class="price">
+    <p class="original">256,920원</p>
+    <div class="badge">25% 할인</div>
+    <div class="final">192,690원</div>
+    <p class="ship-note">배송비 포함 가격</p>
+  </section>
 
-  <!-- 8. 푸터 -->
-  <div class="ep-footer">
+  <!-- NEW: 이런 분께 추천 -->
+  <section class="recommend">
+    <h2>이런 분께 추천드립니다</h2>
+    <div class="rec-grid">
+      <div class="rec-card">
+        <span class="rec-emoji">🛡️</span>
+        <span>면역력이 걱정되시는 분</span>
+      </div>
+      <div class="rec-card">
+        <span class="rec-emoji">🌿</span>
+        <span>소화가 잘 안 되시는 분</span>
+      </div>
+      <div class="rec-card">
+        <span class="rec-emoji">🎁</span>
+        <span>부모님 건강 선물을 찾으시는 분</span>
+      </div>
+      <div class="rec-card">
+        <span class="rec-emoji">⚡</span>
+        <span>피로가 자주 쌓이시는 분</span>
+      </div>
+      <div class="rec-card">
+        <span class="rec-emoji">💚</span>
+        <span>장 건강을 챙기고 싶으신 분</span>
+      </div>
+      <div class="rec-card">
+        <span class="rec-emoji">🔄</span>
+        <span>건강을 종합적으로 관리하고 싶으신 분</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. WARNING -->
+  <section class="warning">
+    <h3>섭취 시 주의사항</h3>
+    <ul>
+      <li>본 제품은 건강기능식품으로 질병의 예방 및 치료를 위한 의약품이 아닙니다.</li>
+      <li>알레르기 체질이거나 특이 체질인 경우 원료를 확인하시고 섭취하십시오.</li>
+      <li>의약품 복용 시 전문가(의사, 약사 등)와 상담 후 섭취하십시오.</li>
+      <li>어린이 손에 닿지 않는 곳에 보관하십시오.</li>
+      <li>직사광선 및 고온다습한 장소를 피해 보관하십시오.</li>
+    </ul>
+  </section>
+
+  <!-- 8. FOOTER -->
+  <footer class="footer">
     <div class="brand">이지프로핏</div>
-    <div class="disc">
-      본 상품은 건강기능식품 판매업 신고 업체에서 판매합니다.<br>
-      표시된 기능성은 식품의약품안전처에서 인정한 내용입니다.
-    </div>
-  </div>
+    <div class="sub">건강기능식품 판매업 신고 업체</div>
+  </footer>
 
 </div>
 </body>
