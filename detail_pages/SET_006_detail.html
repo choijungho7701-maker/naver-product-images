@@ -3,14 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>유산균 + 비타민C 장·면역 케어 세트</title>
+<title>유산균+비타민C 건강 세트</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; background: #fff; }
   .wrap { max-width: 860px; margin: 0 auto; }
 
   .hero { background: #1a2744; padding: 70px 40px; text-align: center; }
-  .hero .pill { display: inline-block; background: #e8192c; color: #fff; font-size: 20px; font-weight: 700; padding: 8px 24px; border-radius: 50px; margin-bottom: 28px; }
+  .hero .pill { display: inline-block; background: #e8192c; color: #fff; font-size: 20px;
+    font-weight: 700; padding: 8px 24px; border-radius: 50px; margin-bottom: 28px; }
   .hero h1 { color: #fff; font-size: 44px; font-weight: 800; line-height: 1.25; margin-bottom: 20px; }
   .hero p { color: #7ec8e3; font-size: 24px; font-weight: 500; }
 
@@ -22,12 +23,14 @@
 
   .cards { background: #fff; padding: 60px 40px; display: flex; gap: 24px; }
   .card { flex: 1; border: 2px solid #e8e8e8; border-radius: 20px; padding: 36px 28px; text-align: center; }
-  .card .circle { width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: #fff; font-size: 20px; font-weight: 700; }
+  .card .circle { width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center;
+    justify-content: center; margin: 0 auto 20px; color: #fff; font-size: 20px; font-weight: 700; }
   .circle-navy { background: #1a2744; }
   .circle-blue { background: #2563eb; }
   .card .product-name { color: #1a2744; font-size: 40px; font-weight: 800; margin-bottom: 10px; }
   .card .qty { color: #555; font-size: 20px; margin-bottom: 16px; }
-  .card .tag { display: inline-block; font-size: 20px; font-weight: 700; padding: 6px 18px; border-radius: 50px; margin-bottom: 14px; }
+  .card .tag { display: inline-block; font-size: 20px; font-weight: 700; padding: 6px 18px;
+    border-radius: 50px; margin-bottom: 14px; }
   .tag-orange { background: #fff3e0; color: #e65100; }
   .tag-blue   { background: #e3f0ff; color: #1565c0; }
   .card .desc { color: #777; font-size: 20px; line-height: 1.6; }
@@ -36,7 +39,8 @@
   .product-info h2 { color: #1a2744; font-size: 28px; font-weight: 800; margin-bottom: 32px; text-align: center; }
   .info-grid { display: flex; gap: 24px; }
   .info-box { flex: 1; background: #fff; border-radius: 18px; padding: 32px 28px; border-top: 4px solid #1a2744; }
-  .info-box h3 { color: #1a2744; font-size: 22px; font-weight: 800; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid #e0e0e0; }
+  .info-box h3 { color: #1a2744; font-size: 22px; font-weight: 800; margin-bottom: 20px;
+    padding-bottom: 12px; border-bottom: 1px solid #e0e0e0; }
   .info-box ul { list-style: none; padding: 0; }
   .info-box ul li { font-size: 20px; color: #444; line-height: 1.9; padding-left: 14px; position: relative; }
   .info-box ul li::before { content: '•'; position: absolute; left: 0; color: #1a2744; font-size: 18px; }
@@ -44,53 +48,67 @@
   .small-text { font-size: 17px; color: #555; line-height: 1.5; }
 
   .infographic-wrap { background: #FFFFFF; padding: 48px 32px; }
-  .infographic-shadow { box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
-  .science-badge { font-size: 13px; font-family: 'Courier New', monospace; background-color: #E0F2FE; color: #0369A1; border: 1px solid #0369A1; padding: 4px 10px; border-radius: 20px; display: inline-block; }
+  .infographic-shadow { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); }
+  .science-badge { font-size: 13px; font-family: 'Courier New', monospace; background-color: #E0F2FE;
+    color: #0369A1; border: 1px solid #0369A1; padding: 4px 10px; border-radius: 20px; display: inline-block; }
   .bento-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; max-width: 1100px; margin: 0 auto; }
   @media (max-width: 600px) { .bento-grid { grid-template-columns: 1fr !important; } }
-  .bento-card { background: #fff; border-radius: 16px; padding: 40px 32px; display: flex; flex-direction: column; align-items: flex-start; position: relative; }
-  .bento-card .social-badge { position: absolute; top: 16px; right: 16px; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 20px; color: #fff; }
-  .bento-card .icon-circle { width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 28px; }
+  .bento-card { background: #fff; border-radius: 16px; padding: 40px 32px; display: flex;
+    flex-direction: column; align-items: flex-start; position: relative; }
+  .bento-card .social-badge { position: absolute; top: 16px; right: 16px; font-size: 12px;
+    font-weight: 700; padding: 4px 10px; border-radius: 20px; color: #fff; }
+  .bento-card .icon-circle { width: 100px; height: 100px; border-radius: 50%; display: flex;
+    align-items: center; justify-content: center; margin-bottom: 28px; }
   .bento-card h3 { font-size: 26px; font-weight: 800; color: #1a2744; margin-bottom: 14px; }
   .bento-card .desc-text { font-size: 20px; color: #444; line-height: 1.9; margin-bottom: 20px; }
   .bento-card .nudge-text { font-size: 14px; color: #888; margin-bottom: 18px; }
   .bento-card .tag-pill { font-size: 14px; font-weight: 700; padding: 6px 16px; border-radius: 50px; }
-  .urgency-banner { background: #DC2626; color: #fff; font-size: 20px; font-weight: 700; text-align: center; padding: 14px 24px; border-radius: 12px; margin-bottom: 32px; max-width: 1100px; margin-left: auto; margin-right: auto; }
+  .urgency-banner { background: #DC2626; color: #fff; font-size: 20px; font-weight: 700;
+    text-align: center; padding: 14px 24px; border-radius: 12px; margin-bottom: 32px;
+    max-width: 1100px; margin-left: auto; margin-right: auto; }
   .infographic-header { text-align: center; margin-bottom: 48px; }
   .infographic-header h2 { font-size: 36px; font-weight: 800; color: #1a2744; margin-bottom: 14px; }
-  .infographic-header .accent-bar { width: 60px; height: 4px; background: #F97316; border-radius: 4px; margin: 0 auto; }
-  .infographic-cta { max-width: 1100px; margin: 40px auto 0; background: #F8F5EF; border: 2px solid #1a2744; border-radius: 16px; padding: 20px; text-align: center; }
+  .infographic-header .accent-bar { width: 60px; height: 4px; background: #F97316;
+    border-radius: 4px; margin: 0 auto; }
+  .infographic-cta { max-width: 1100px; margin: 40px auto 0; background: #F8F5EF;
+    border: 2px solid #1a2744; border-radius: 16px; padding: 20px; text-align: center; }
   .infographic-cta p { font-size: 22px; font-weight: 700; color: #1a2744; }
 
   .dosage { background: #1a2744; padding: 64px 40px; text-align: center; }
   .dosage h2 { color: #fff; font-size: 32px; font-weight: 800; margin-bottom: 44px; }
   .dosage-steps { display: flex; align-items: center; justify-content: center; gap: 0; flex-wrap: wrap; }
-  .step-box { background: rgba(255,255,255,0.12); border: 2px solid rgba(255,255,255,0.3); border-radius: 16px; padding: 28px 24px; width: 210px; min-width: 180px; }
+  .step-box { background: rgba(255,255,255,0.12); border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 16px; padding: 28px 24px; width: 210px; min-width: 180px; }
   .step-box .num { color: #f97316; font-size: 20px; font-weight: 700; margin-bottom: 8px; }
   .step-box .step-text { color: #fff; font-size: 20px; font-weight: 600; line-height: 1.5; }
   .arrow { color: #f97316; font-size: 32px; font-weight: 700; padding: 0 10px; flex-shrink: 0; }
 
   .price { background: #fff; padding: 64px 40px; text-align: center; }
   .price .original { color: #aaa; font-size: 24px; text-decoration: line-through; margin-bottom: 12px; }
-  .price .badge { display: inline-block; background: #e8192c; color: #fff; font-size: 22px; font-weight: 700; padding: 6px 20px; border-radius: 50px; margin-bottom: 18px; }
+  .price .badge { display: inline-block; background: #e8192c; color: #fff; font-size: 22px;
+    font-weight: 700; padding: 6px 20px; border-radius: 50px; margin-bottom: 18px; }
   .price .final { color: #1a2744; font-size: 68px; font-weight: 900; line-height: 1.1; margin-bottom: 14px; }
   .price .ship-note { color: #999; font-size: 20px; }
 
   .recommend { background: #fff; padding: 60px 40px; }
   .recommend h2 { color: #1a2744; font-size: 28px; font-weight: 800; margin-bottom: 32px; text-align: center; }
   .rec-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-  .rec-card { background: #1e3464; border-radius: 14px; padding: 24px 22px; color: #fff; font-size: 20px; font-weight: 600; line-height: 1.5; display: flex; align-items: center; gap: 14px; }
+  .rec-card { background: #1e3464; border-radius: 14px; padding: 24px 22px; color: #fff;
+    font-size: 20px; font-weight: 600; line-height: 1.5; display: flex; align-items: center; gap: 14px; }
   .rec-card .rec-emoji { font-size: 28px; flex-shrink: 0; }
 
   .warning { background: #F5F5F5; padding: 56px 40px; }
-  .warning h3 { color: #1a2744; font-size: 26px; font-weight: 800; margin-bottom: 24px; padding-bottom: 14px; border-bottom: 2px solid #ddd; }
+  .warning h3 { color: #1a2744; font-size: 26px; font-weight: 800; margin-bottom: 24px;
+    padding-bottom: 14px; border-bottom: 2px solid #ddd; }
   .warning ul { list-style: none; padding: 0; }
-  .warning ul li { color: #444; font-size: 20px; line-height: 1.8; padding-left: 20px; position: relative; margin-bottom: 6px; }
+  .warning ul li { color: #444; font-size: 20px; line-height: 1.8; padding-left: 20px;
+    position: relative; margin-bottom: 6px; }
   .warning ul li::before { content: '·'; position: absolute; left: 4px; color: #888; font-size: 24px; }
 
   .footer { background: #1a2744; padding: 48px 40px; text-align: center; }
   .footer .brand { color: #fff; font-size: 26px; font-weight: 800; margin-bottom: 10px; }
   .footer .sub { color: #7ec8e3; font-size: 20px; }
+
 </style>
 </head>
 <body>
@@ -99,8 +117,8 @@
   <!-- 1. HERO -->
   <section class="hero">
     <div class="pill">건강 세트 상품</div>
-    <h1>유산균 + 비타민C<br>장·면역 케어 세트</h1>
-    <p>유익균 증식 + 장 점막 항산화 이중 케어</p>
+    <h1>유산균 + 비타민C 건강 세트</h1>
+    <p>장 건강 + 항산화 이중 케어</p>
   </section>
 
   <!-- 2. SYNERGY -->
@@ -110,92 +128,65 @@
 
   <!-- 3. THUMBNAIL -->
   <section class="thumbnail">
-    <img src="https://choijungho7701-maker.github.io/naver-product-images/thumbnails/SET_006_thumb.jpg"
-         alt="유산균 + 비타민C 장·면역 케어 세트 대표 이미지" width="100%">
+    <img src="https://choijungho7701-maker.github.io/naver-product-images/thumbnails/SET_006_thumb.jpg" alt="유산균 + 비타민C 건강 세트 대표 이미지" width="100%">
   </section>
 
   <!-- 인포그래픽 -->
   <section class="infographic-wrap">
-    <div class="urgency-banner">🌿 유산균+비타민C 장·면역 케어 세트 — 한정 수량 소진 시 조기 종료</div>
-
+    <div class="urgency-banner">🌿 장 건강·항산화 복합 세트 — 한정 수량 소진 시 종료</div>
     <div class="infographic-header">
       <h2>유산균 + 비타민C가 함께하면</h2>
       <div class="accent-bar"></div>
     </div>
-
     <div class="bento-grid">
 
-      <!-- 카드 1: 장 건강 (유산균 · ★4.9 / 386건) -->
       <div class="bento-card infographic-shadow">
         <span class="social-badge" style="background:#2563A8;">★ 4.9 (386건)</span>
         <div class="icon-circle" style="background:rgba(37,99,168,0.10);">
-          <svg fill="none" height="60" viewBox="0 0 24 24" width="60" xmlns="http://www.w3.org/2000/svg" style="color:#2563A8;">
-            <path d="M17.5 13.5C17.5 16 15.5 18 12 18C8.5 18 6.5 16 6.5 13.5C6.5 11 8.5 9 12 9C15.5 9 17.5 7 17.5 4.5" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"/>
-            <path d="M6.5 4.5C6.5 7 8.5 9 12 9" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"/>
-            <circle cx="15" cy="12" fill="currentColor" r="1.5"/>
-            <circle cx="9" cy="15" fill="currentColor" r="1.5"/>
-            <circle cx="12" cy="6" fill="currentColor" r="1"/>
-          </svg>
+          <svg fill="none" height="60" viewBox="0 0 24 24" width="60" xmlns="http://www.w3.org/2000/svg" style="color:#2563A8;"><path d="M17.5 13.5C17.5 16 15.5 18 12 18C8.5 18 6.5 16 6.5 13.5C6.5 11 8.5 9 12 9C15.5 9 17.5 7 17.5 4.5" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"/><path d="M6.5 4.5C6.5 7 8.5 9 12 9" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"/><circle cx="15" cy="12" fill="currentColor" r="1.5"/><circle cx="9" cy="15" fill="currentColor" r="1.5"/><circle cx="12" cy="6" fill="currentColor" r="1"/></svg>
         </div>
         <div style="margin-bottom:14px;"><span class="science-badge">Lactobacillus · Bifidobacterium</span></div>
         <h3>장 건강에 도움</h3>
-        <p class="desc-text">유산균이 유익균 증식을 도와 장 환경 개선과 장 면역 유지에 도움을 줍니다.</p>
+        <p class="desc-text">유산균이 유익균 증식을 도와 장 환경 개선에 도움을 줍니다.</p>
         <p class="nudge-text">6,574명이 찜 · 최근 42,564건 주문</p>
         <span class="tag-pill" style="background:rgba(37,99,168,0.10);color:#2563A8;">유산균 핵심 성분</span>
       </div>
-
-      <!-- 카드 2: 항산화·면역 (비타민C · ★4.9 / 167건) -->
       <div class="bento-card infographic-shadow">
         <span class="social-badge" style="background:#F97316;">★ 4.9 (167건)</span>
         <div class="icon-circle" style="background:rgba(249,115,22,0.10);">
-          <svg fill="none" height="60" viewBox="0 0 24 24" width="60" xmlns="http://www.w3.org/2000/svg" style="color:#F97316;">
-            <path d="M12 2L4 5V11C4 16.19 7.41 21.05 12 22.5C16.59 21.05 20 16.19 20 11V5L12 2Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
-            <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-          </svg>
+          <svg fill="none" height="60" viewBox="0 0 24 24" width="60" xmlns="http://www.w3.org/2000/svg" style="color:#F97316;"><path d="M12 2L4 5V11C4 16.19 7.41 21.05 12 22.5C16.59 21.05 20 16.19 20 11V5L12 2Z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" fill="currentColor" fill-opacity="0.6" r="3"/><path d="M10 12H14M12 10V14" stroke="white" stroke-linecap="round" stroke-width="1"/></svg>
         </div>
-        <div style="margin-bottom:14px;"><span class="science-badge">L-Ascorbic Acid · Vitamin C</span></div>
-        <h3>항산화·면역 건강에 도움</h3>
-        <p class="desc-text">비타민C가 장 점막 세포의 항산화 환경을 유지하고 면역 기능에 도움을 줍니다.</p>
-        <p class="nudge-text">5,513명이 찜한 상품입니다.</p>
+        <div style="margin-bottom:14px;"><span class="science-badge">Ascorbic Acid · Antioxidant</span></div>
+        <h3>항산화에 도움</h3>
+        <p class="desc-text">비타민C가 장 점막 상피 세포의 항산화 환경 유지에 도움을 줍니다.</p>
+        <p class="nudge-text">5,513명이 찜한 상품</p>
         <span class="tag-pill" style="background:rgba(249,115,22,0.10);color:#F97316;">비타민C 핵심 성분</span>
       </div>
-
-      <!-- 카드 3: 유익균 정착 -->
       <div class="bento-card infographic-shadow">
+        
         <div class="icon-circle" style="background:rgba(245,158,11,0.10);">
-          <svg fill="none" height="60" viewBox="0 0 24 24" width="60" xmlns="http://www.w3.org/2000/svg" style="color:#F59E0B;">
-            <circle cx="8" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
-            <circle cx="16" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
-            <circle cx="12" cy="16" r="3" stroke="currentColor" stroke-width="1.5"/>
-            <line x1="8" y1="13" x2="12" y2="13" stroke="currentColor" stroke-width="1" opacity="0.5"/>
-            <line x1="16" y1="13" x2="12" y2="13" stroke="currentColor" stroke-width="1" opacity="0.5"/>
-          </svg>
+          <svg fill="none" height="60" viewBox="0 0 24 24" width="60" xmlns="http://www.w3.org/2000/svg" style="color:#F59E0B;"><path d="M12 21C12 21 3 15 3 9C3 6 5 4 7.5 4C9.5 4 11 5 12 6.5C13 5 14.5 4 16.5 4C19 4 21 6 21 9C21 15 12 21 12 21Z" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.5"/><path d="M7 10C7 10 8 13 12 13C16 13 17 10 17 10" stroke="white" stroke-linecap="round" stroke-width="1"/></svg>
         </div>
-        <div style="margin-bottom:14px;"><span class="science-badge">Prebiotic × Probiotic</span></div>
-        <h3>유익균 정착 지원</h3>
-        <p class="desc-text">비타민C의 항산화 환경에서 유산균이 더욱 효과적으로 증식하고 정착합니다.</p>
-        <span class="tag-pill" style="background:rgba(245,158,11,0.10);color:#F59E0B;">유익균 케어</span>
+        <div style="margin-bottom:14px;"><span class="science-badge">Probiotic 30억 CFU</span></div>
+        <h3>면역 건강에 도움</h3>
+        <p class="desc-text">장내 유익균 증식이 면역 기능 개선 지원에 도움을 줍니다.</p>
+        
+        <span class="tag-pill" style="background:rgba(245,158,11,0.10);color:#F59E0B;">면역 지원</span>
       </div>
-
-      <!-- 카드 4: 이중 시너지 -->
       <div class="bento-card infographic-shadow">
+        
         <div class="icon-circle" style="background:rgba(16,185,129,0.10);">
-          <svg fill="none" height="60" viewBox="0 0 24 24" width="60" xmlns="http://www.w3.org/2000/svg" style="color:#10B981;">
-            <circle cx="9" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
-            <circle cx="15" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
-            <path d="M12 9C12.8 10 12.8 14 12 15" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
-          </svg>
+          <svg fill="none" height="60" viewBox="0 0 24 24" width="60" xmlns="http://www.w3.org/2000/svg" style="color:#10B981;"><circle cx="9" cy="12" r="5" stroke="currentColor" stroke-width="2"/><circle cx="15" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 9C12.8 10 12.8 14 12 15" stroke="currentColor" stroke-linecap="round" stroke-width="2"/></svg>
         </div>
         <div style="margin-bottom:14px;"><span class="science-badge">Gut × Immune Synergy</span></div>
         <h3>이중 시너지 효과</h3>
-        <p class="desc-text">장 건강과 면역 기능을 동시에 챙기는 복합 케어를 돕습니다.</p>
+        <p class="desc-text">장 건강과 항산화 방어를 동시에 챙기는 복합 케어를 돕습니다.</p>
+        
         <span class="tag-pill" style="background:rgba(16,185,129,0.10);color:#10B981;">복합 케어</span>
       </div>
-
     </div>
-
     <div class="infographic-cta">
-      <p>두 성분의 조합이 장 건강과 면역 기능을 동시에 지킵니다</p>
+      <p>두 성분의 조합이 장 건강과 항산화 방어를 동시에 지킵니다</p>
     </div>
   </section>
 
@@ -206,14 +197,14 @@
       <div class="product-name">유산균</div>
       <div class="qty">120포 · 4개월분</div>
       <span class="tag tag-orange">장 건강에 도움</span>
-      <p class="desc">유익균 증식 지원</p>
+      <p class="desc">30억 CFU 프로바이오틱스 보장</p>
     </div>
     <div class="card">
       <div class="circle circle-blue">구성2</div>
       <div class="product-name">비타민C</div>
       <div class="qty">90포 · 3개월분</div>
       <span class="tag tag-blue">항산화에 도움</span>
-      <p class="desc">비타민C 함유</p>
+      <p class="desc">아스코르브산 함유</p>
     </div>
   </section>
 
@@ -223,25 +214,11 @@
     <div class="info-grid">
       <div class="info-box">
         <h3>구성 1 · 유산균</h3>
-        <ul>
-          <li><strong>구성:</strong> 120포, 4개월분</li>
-          <li><strong>내용량:</strong> 300g (2.5g × 30포 × 4박스)</li>
-          <li><strong>성분:</strong> <span class="small-text">유산균혼합분말 [Lactiplantibacillus plantarum, Lacticaseibacillus rhamnosus, L. casei, Bifidobacterium longum, B. breve 등 10종+], 난소화성말토덱스트린, 자일리톨, 프락토올리고당, 갈락토올리고당 외 [우유·대두 함유]</span></li>
-          <li><strong>함량:</strong> 1포당 생균수 30억 CFU (프로바이오틱스 보장균)</li>
-          <li><strong>섭취방법:</strong> 1일 1회, 1회 1포를 그대로 섭취하거나 물·음료와 함께 섭취</li>
-          <li><strong>보관방법:</strong> 습기가 적고 직사광선을 받지 않는 실온에 보관</li>
-          <li><strong>유통기한:</strong> 제조일로부터 12개월</li>
-          <li><strong>영양정보:</strong> 1포(2.5g)당 열량 10kcal, 탄수화물 2g</li>
-        </ul>
+        <ul><li><strong>구성:</strong> 120포, 4개월분</li><li><strong>내용량:</strong> 300g (2.5g × 30포 × 4박스)</li><li><strong>성분:</strong> <span class="small-text">유산균혼합분말 [Lactiplantibacillus plantarum, Lacticaseibacillus rhamnosus, L. casei, Bifidobacterium longum, B. breve 등 10종+], 난소화성말토덱스트린, 프락토올리고당 외 [우유·대두 함유]</span></li><li><strong>함량:</strong> 1포당 생균수 30억 CFU (프로바이오틱스 보장균)</li><li><strong>섭취방법:</strong> 1일 1회, 1회 1포를 그대로 섭취하거나 물·음료와 함께 섭취</li><li><strong>보관방법:</strong> 습기가 적고 직사광선을 받지 않는 실온에 보관</li><li><strong>유통기한:</strong> 제조일로부터 12개월</li><li><strong>영양정보:</strong> 1포(2.5g)당 열량 10kcal, 탄수화물 2g, 단백질 0g, 지방 0g</li></ul>
       </div>
       <div class="info-box">
         <h3>구성 2 · 비타민C</h3>
-        <ul>
-          <li><strong>구성:</strong> 90포, 3개월분</li>
-          <li><strong>주요 성분:</strong> 비타민C(L-아스코르브산) 함유</li>
-          <li><strong>섭취방법:</strong> 1일 1회, 1회 1포를 그대로 섭취하거나 물에 녹여 섭취하십시오</li>
-          <li><strong>보관방법:</strong> 직사광선을 피해 서늘하고 건조한 곳에 보관</li>
-        </ul>
+        <ul><li><strong>구성:</strong> 90포, 3개월분</li><li><strong>성분:</strong> <span class="small-text">비타민C(아스코르브산) 함유 복합 제제</span></li><li><strong>특징:</strong> 항산화 작용, 콜라겐 합성 지원</li><li><strong>섭취방법:</strong> 1일 1회, 1회 1포를 물과 함께 또는 물에 녹여 섭취하십시오</li><li><strong>보관방법:</strong> 습기 및 직사광선을 피하여 서늘한 곳에 보관</li></ul>
       </div>
     </div>
   </section>
@@ -250,20 +227,10 @@
   <section class="dosage">
     <h2>올바른 복용 방법</h2>
     <div class="dosage-steps">
-      <div class="step-box">
-        <div class="num">① 공복</div>
-        <div class="step-text">유산균<br>1포</div>
-      </div>
-      <div class="arrow">→</div>
-      <div class="step-box">
-        <div class="num">② 아침</div>
-        <div class="step-text">비타민C<br>1포</div>
-      </div>
-      <div class="arrow">→</div>
-      <div class="step-box">
-        <div class="num">③ 꾸준히</div>
-        <div class="step-text">3개월 이상<br>지속 복용</div>
-      </div>
+<div class="step-box"><div class="num">① 공복</div><div class="step-text">유산균
+1포</div></div><div class="arrow">→</div><div class="step-box"><div class="num">② 식후</div><div class="step-text">비타민C
+1포</div></div><div class="arrow">→</div><div class="step-box"><div class="num">③ 꾸준히</div><div class="step-text">4개월 이상
+지속 복용</div></div>
     </div>
   </section>
 
@@ -279,12 +246,7 @@
   <section class="recommend">
     <h2>이런 분께 추천드립니다</h2>
     <div class="rec-grid">
-      <div class="rec-card"><span class="rec-emoji">🌿</span><span>장 건강을 챙기고 싶으신 분</span></div>
-      <div class="rec-card"><span class="rec-emoji">🦠</span><span>유익균을 늘리고 싶으신 분</span></div>
-      <div class="rec-card"><span class="rec-emoji">🛡️</span><span>면역 건강을 강화하고 싶으신 분</span></div>
-      <div class="rec-card"><span class="rec-emoji">✨</span><span>피부 건강에 관심 있으신 분</span></div>
-      <div class="rec-card"><span class="rec-emoji">😋</span><span>소화가 잘 안 되시는 분</span></div>
-      <div class="rec-card"><span class="rec-emoji">🔄</span><span>장과 면역을 함께 관리하고 싶으신 분</span></div>
+<div class="rec-card"><span class="rec-emoji">🌿</span><span>소화가 잘 안 되시는 분</span></div><div class="rec-card"><span class="rec-emoji">🛡️</span><span>면역력이 걱정되시는 분</span></div><div class="rec-card"><span class="rec-emoji">🦠</span><span>장 건강을 챙기고 싶으신 분</span></div><div class="rec-card"><span class="rec-emoji">✨</span><span>피부 건강이 걱정되시는 분</span></div><div class="rec-card"><span class="rec-emoji">⚡</span><span>항산화가 필요하신 분</span></div><div class="rec-card"><span class="rec-emoji">🔄</span><span>장과 면역을 함께 관리하고 싶으신 분</span></div>
     </div>
   </section>
 
@@ -307,64 +269,5 @@
   </footer>
 
 </div>
-
-<!-- FOOTER BANNER -->
-<main class="flex flex-col items-center">
-<!-- SECTION 1 (Trust/Certificate) -->
-<section class="w-full max-w-[860px] bg-[#1A2744] text-white p-12 flex flex-row items-center justify-between gap-8 border-t-4 border-[#d77500]">
-<div class="flex-1 flex flex-col items-start text-left">
-<span class="material-symbols-outlined text-[#ffb77d] text-5xl mb-4" data-icon="verified_user" style="font-variation-settings: 'FILL' 1;">verified_user</span>
-<h2 class="font-headline-md text-headline-md text-white mb-2">건강기능식품 취급 신고 완료</h2>
-<p class="font-body-md text-body-md text-[#b9c6eb] mb-6">검증된 100% 정품만 취급합니다</p>
-<div class="w-24 h-1 bg-[#ffb77d] mb-6"></div>
-<p class="font-body-md text-[18px] leading-relaxed text-white/90">
-                    건강기능식품에 관한 법률 제13조 규정에 따라<br/>식품위생교육 이수 완료
-                </p>
-</div>
-<div class="flex-shrink-0">
-<img alt="Official Certificate" class="max-w-[300px] rounded-lg border-2 border-[#ffb77d] shadow-xl" data-alt="A formal government-issued certificate in a high-resolution photograph, featuring official stamps and Korean calligraphy on high-quality parchment paper. The document is presented against a clean, professional studio background with soft directional lighting that highlights the texture of the paper. A sophisticated gold metallic border frames the image, echoing a premium health-tech aesthetic with professional corporate tones of navy and gold." src="https://choijungho7701-maker.github.io/naver-product-images/footer/certificate.png" style="width:100%;max-width:300px;"/>
-</div>
-</section>
-<div class="h-16"></div> <!-- Spacer for section gap -->
-<!-- SECTION 2 (Customer Service) -->
-<section class="w-full max-w-[860px] bg-[#F8F5EF] text-[#04122e] p-16 flex flex-col items-center text-center border-t-4 border-[#1A2744]">
-<span class="material-symbols-outlined text-[#d77500] text-6xl mb-6" data-icon="award_star" style="font-variation-settings: 'FILL' 1;">award_star</span>
-<h2 class="font-headline-lg text-[30px] mb-2 text-[#1A2744]">100% 정품을 보장합니다</h2>
-<h3 class="font-headline-md text-[26px] mb-10 text-[#1A2744]">200% 만족을 위해 노력합니다</h3>
-<div class="space-y-4 mb-12">
-<p class="text-[20px] leading-[1.9] text-on-surface-variant font-body-md">
-                    고객여러분께 만족을 드리기 위해 최선을 다하겠습니다
-                </p>
-<p class="text-[20px] leading-[1.9] text-on-surface-variant font-body-md">
-                    비용절감을 통해 최상 품질의 제품을 보다 싸고 빠르게 배송하겠습니다
-                </p>
-<p class="text-[20px] leading-[1.9] text-on-surface-variant font-body-md">
-                    저희 임직원은 고객 여러분의 편안한 삶을 위해 조금이나마 더 노력하겠습니다
-                </p>
-</div>
-<div class="bg-white px-10 py-8 rounded-xl border border-outline-variant shadow-sm mb-8 w-full max-w-lg">
-<div class="flex items-center justify-center gap-3 mb-2">
-<span class="material-symbols-outlined text-[#1A2744]" data-icon="call">call</span>
-<span class="text-[36px] font-bold text-[#1A2744] tracking-tight">010-2250-7420</span>
-</div>
-<p class="text-[18px] text-secondary font-body-md">
-                    잦은 현장근무로 인해 문자로 문의 주시면 빠르게 연락드리겠습니다
-                </p>
-</div>
-<p class="text-[22px] font-bold text-[#1A2744] mt-4 tracking-widest">감사합니다</p>
-</section>
-</main>
-<!-- FOOTER (Shared Component) -->
-<footer class="w-full flex flex-col items-center text-center px-8 max-w-[860px] mx-auto bg-[#1A2744] dark:bg-slate-950 text-white py-16 border-t-4 border-orange-500">
-<span class="text-xl font-bold text-white mb-4 block">이지프로핏</span>
-<div class="flex flex-wrap justify-center gap-8 mb-8">
-<a class="text-white/60 hover:text-white transition-colors underline" href="#">이용약관</a>
-<a class="text-white/60 hover:text-white transition-colors underline" href="#">개인정보처리방침</a>
-<a class="text-white/60 hover:text-white transition-colors underline" href="#">고객센터</a>
-</div>
-<p class="font-public-sans text-[18px] leading-relaxed text-white/60">
-            © 2024 이지프로핏 All Rights Reserved.
-        </p>
-</footer>
 </body>
 </html>
